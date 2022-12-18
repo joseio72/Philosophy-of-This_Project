@@ -8,9 +8,10 @@ So this means just we do something, This is that something.         - {Rahenvy :
 
 
 This Challenge is for myself to import.
-Goal One : Beat the Challenges 1-100 with python to the best of one's
-Goal Two  : Beat the Challenges 1-100 with cython to the best of
-      "your ability\n GOOD LUCK YOU CAN DO IT.") #"This Challenge is for myself to import.#
+Goal One : Beat the Challenges 1-100 with python to the best of one's own ability
+Goal Two  : Beat the Challenges 1-100 with cython to the best of one's own ability
+      "your ability"
+GOOD LUCK YOU CAN DO IT
 
 Find.me -
 ----------

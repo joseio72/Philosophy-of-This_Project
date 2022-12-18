@@ -35,5 +35,4 @@ class CountCalls:
         self.two_ThreeBoth = [x for x in args if x % 7 == 0 and x % 5 != 0]
         #print(self.two_ThreeBoth)
         return self.two_ThreeBoth
-        """print"""
-        print(f'result: {args} > {self.two_ThreeBoth}')  # 2000 >
+
