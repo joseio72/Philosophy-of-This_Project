@@ -31,7 +31,7 @@ class CountCalls:
         print(args)
         # Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
         if (x for x in args if x % 7 != 0 and x % 5 == 0) == True or (x for x in args if x % 7 == 0 and x % 5 == 0) == True :
-            return AssertionError(f"your args return Incorrect {(x for x in args if x % 7 != 0 and x % 5 != 0)}")
+            return AssertionError(f"Main.py your args return Incorrect {(x for x in args if x % 7 != 0 and x % 5 != 0)}")
         self.two_ThreeBoth = [x for x in args if x % 7 == 0 and x % 5 != 0]
         #print(self.two_ThreeBoth)
         return self.two_ThreeBoth
