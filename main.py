@@ -27,12 +27,26 @@ class CountCalls:
 
     """Qestion One"""
 
-    def D7NM5(self,args):
+    def Q1(self,args):
         print(args)
         # Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
-        if (x for x in args if x % 7 != 0 and x % 5 == 0) == True or (x for x in args if x % 7 == 0 and x % 5 == 0) == True :
+        if (x for x in args if x % 7 == 0 and x % 5 == 0) == True :
             return AssertionError(f"Main.py your args return Incorrect {(x for x in args if x % 7 != 0 and x % 5 != 0)}")
         self.two_ThreeBoth = [x for x in args if x % 7 == 0 and x % 5 != 0]
-        #print(self.two_ThreeBoth)
         return self.two_ThreeBoth
+
+    """Qestion Two"""
+
+    def Q2(self, args):
+        #Question: Write a program which can compute the factorial of a given numbers.
+        # The results should be printed in a comma-separated sequence on a single line. ___List___
+        # Suppose the following input is supplied to the program: 8 Then, the output should be: 40320
+        # Hints: In case of input data being supplied to the question, it should be assumed to be a console input.
+
+        """Enter Recursive approach """
+        def factorial(n):
+            # single line to find factorial
+            return 1 if (n == 1 or n == 0) else n * factorial(n - 1)
+        return factorial(args)
+
 

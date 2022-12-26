@@ -1,7 +1,22 @@
-import logging
+import time
 
 
-def TimeTitals(test_results):
-    logging.basicConfig(filename='100_PythonChallenging_LOG.log', encoding='utf-8', level=logging.INFO)
-    logging.info(str(test_results))
+def time_trial(func):
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        end = time.perf_counter()
+        run_time = start - end
+        func_name = "{}".format(repr(func.__name__))
+        refinshed = ("Finished {} in {} secs".format(repr(func.__name__), round(run_time, 3)))
 
+        Question_OneTestResults = {
+            "Problem Number": func_name,
+            "Test Start Time": f"{start}",
+            "Test Start end": f"{end}",
+            "refinshed": f"{refinshed}",
+            "Result": f"{result}",
+        }
+        return (Question_OneTestResults)
+
+    return wrapper
