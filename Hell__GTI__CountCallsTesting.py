@@ -58,10 +58,9 @@ class Level_3_Advanced:
     def test_compare_Q5(self):
         """Qestion five"""
 
-        f5 = CountCalls().Q5()
-        if 0 != 0:
-            raise AssertionError("func failed basic test.")
-        return f5
+        f5_getString = CountCalls().Q5_getString(None)
+        f5_printString = CountCalls().Q5_printString(f5_getString.lower())
+        return f5_printString
 
 
 result = Level_3_Advanced().test_compare_Q5()

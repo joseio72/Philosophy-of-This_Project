@@ -23,8 +23,6 @@ class CountCalls:
         self.use_CaseValueSubjectOne = args
         self.use_CaseValueSubjectTwo= kwargs
 
-
-
     """Qestion One"""
 
     def Q1(self,args):
@@ -85,15 +83,21 @@ class CountCalls:
 
 
     """Qestion Five"""
-    def Q4(self, args):
+    def Q5_getString(self, args)  -> str:
         # Question: Define a class which has at least two methods:
         # getString: to get a string from console input printString: to print the string in upper case.
         # Also please include simple test function to test the class methods.
         # Use init method to construct some parameters
-        global tuple
-        list = args.split(",")  # list
-        tuple = tuple(list)  # tuple
-        return list, tuple
+        string_to_print =  input("Enter String : ")
+        return  string_to_print
+
+    def Q5_printString(self, args):
+        args = args.upper()
+        # Question: Define a class which has at least two methods:
+        # getString: to get a string from console input printString: to print the string in upper case.
+        # Also please include simple test function to test the class methods.
+        # Use init method to construct some parameters
+        return args
 
 
 
