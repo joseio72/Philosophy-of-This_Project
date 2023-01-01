@@ -83,3 +83,11 @@ INFO:root:{'Problem Number': "'test_compare_Q5'", 'Test Start Time': '90141.2948
 INFO:root:{'Problem Number': "'test_compare_Q5'", 'Test Start Time': '90928.704076912', 'Test Start end': '90930.7356964', 'refinshed': "Finished 'test_compare_Q5' in -2.032 secs", 'Result': 'sfgsg'}
 INFO:root:{'Problem Number': "'test_compare_Q5'", 'Test Start Time': '90992.006618963', 'Test Start end': '90993.409948989', 'refinshed': "Finished 'test_compare_Q5' in -1.403 secs", 'Result': 'sgsgsgs'}
 INFO:root:{'Problem Number': "'test_compare_Q5'", 'Test Start Time': '91020.098049048', 'Test Start end': '91021.204710746', 'refinshed': "Finished 'test_compare_Q5' in -1.107 secs", 'Result': 'GSGSG'}
+INFO:root:{'Problem Number': "'test_compare_Q5'", 'Test Start Time': '1598349.5965926', 'Test Start end': '1598352.7247403', 'refinshed': "Finished 'test_compare_Q5' in -3.128 secs", 'Result': 'FDFSF'}
+INFO:root:{'Problem Number': "'test_compare_Q5'", 'Test Start Time': '1598405.9965803', 'Test Start end': '1598415.8928804', 'refinshed': "Finished 'test_compare_Q5' in -9.896 secs", 'Result': 'DFDFDF'}
+INFO:root:{'Problem Number': "'test_compare_Q5'", 'Test Start Time': '1598467.6431244', 'Test Start end': '1598471.4818217', 'refinshed': "Finished 'test_compare_Q5' in -3.839 secs", 'Result': 'THEIR'}
+INFO:root:{'Problem Number': "Function Name 'test_compare_Q5'", 'Test Start Time': '1598976.0745405', 'Test Start end': '1598977.9554814', 'refinshed': "Finished 'test_compare_Q5' in -1.881 secs", 'Result': ''}
+INFO:root:{'Problem Number': "Function Name 'test_compare_Q5'", 'Test Start Time': '1599064.6745276', 'Test Start end': '1599065.7101026', 'refinshed': "Finished 'test_compare_Q5' in -1.036 secs", 'Result': ''}
+INFO:root:{'Problem Number': "Function Name 'test_compare_Q5'", 'Test Start Time': '1599156.7408566', 'Test Start end': '1599158.6168772', 'refinshed': "Finished 'test_compare_Q5' in -1.876 secs", 'Result': ''}
+INFO:root:{'Problem Number': "Function Name 'test_compare_Q5'", 'Test Start Time': '1599216.9639187', 'Test Start end': '1599218.0659484', 'refinshed': "Finished 'test_compare_Q5' in -1.102 secs", 'Result': 'ERERER'}
+INFO:root:{'Problem Number': "Function Name 'test_compare_Q6'", 'Test Start Time': '1600778.603312', 'Test Start end': '1600778.6034141', 'refinshed': "Finished 'test_compare_Q6' in -0.0 secs", 'Result': '[18, 22, 24]'}

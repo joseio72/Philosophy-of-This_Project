@@ -7,7 +7,7 @@ def time_trial(func):
         result = func(*args, **kwargs)
         end = time.perf_counter()
         run_time = start - end
-        func_name = "{}".format(repr(func.__name__))
+        func_name = ("Function Name {}".format(repr(func.__name__)))
         refinshed = ("Finished {} in {} secs".format(repr(func.__name__), round(run_time, 3)))
 
         Question_OneTestResults = {

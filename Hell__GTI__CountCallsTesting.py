@@ -4,39 +4,48 @@ import logging
 
 logging.basicConfig(filename='100_PythonChallenging_LOG.log', encoding='utf-8', level=logging.INFO)
 print("This Challenge is for myself to import. \n Goal One : Beat the Challenges 1-100 with python to the best of "
-      "your ability \n Goal Two  : Beat the Challenges 1-100 with cython to the best of "
-      "your ability\n GOOD LUCK YOU CAN DO IT.\n\n") #"This Challenge is for myself to import.#
-
-
+      "your ability \n GOOD LUCK YOU CAN DO IT.\n")  # "This Challenge is for myself to import.#
 
 """Philosophy of This Project.
 Enter A new grad With literally no idea what the shit to do with his life.
-So this means just we do something, This is that something.     - {Rahenvy : Jose' Israel Ossorio-Rojas}""" #Philosophy of This Project
-
+So this means just we do something, This is that something.     - {Rahenvy : Jose' Israel Ossorio-Rojas}"""  # Philosophy of This Project
 
 
 class Level_3_Advanced:
 
-
     @time_trial
     def test_compare_Q1(self):
-        """Qestion One"""
+        """Question One"""
+        # Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
+
         f1 = CountCalls().D7NM5(range(2000, 3200))
-        if not (x for x in f1 if x % 7 == 0 and x % 5== 0):
+        if not (x for x in f1 if x % 7 == 0 and x % 5 == 0):
             return AssertionError(f"your args return Incorrect {(x for x in f1 if f1 % 7 != 0 and f1 % 5 == 0)}")
         return f1
 
     @time_trial
     def test_compare_Q2(self):
-        """Qestion Two"""
+        """Question Two"""
+        # Question: Write a program which can compute the factorial of a given numbers.
+        # The results should be printed in a comma-separated sequence on a single line. ___List___
+        # Suppose the following input is supplied to the program: 8 Then, the output should be: 40320
+        # Hints: In case of input data being supplied to the question, it should be assumed to be a console input.
+
         f2 = CountCalls().Q2(8)
         if f2 != 40320:
-             raise AssertionError("func failed basic test.")
+            raise AssertionError("func failed basic test.")
         return f2
 
     @time_trial
     def test_compare_Q3(self):
-        """Qestion Three"""
+        """Question Three"""
+        # Question: With a given integral number n,
+        # write a program to generate a dictionary that contains (i, i*i) such that is an integral number
+        # between 1 and n (both included). and then the program should print the dictionary.
+        # Suppose the following input is supplied to the program: 8
+        # Then, the output should be: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+        # Hints: In case of input data being supplied to the question,
+        # it should be assumed to be a console input. Consider use dict()
         f3 = CountCalls().Q3(int(input("Q3, input a Whole number    ")))
 
         if type(f3) != dict:
@@ -45,50 +54,72 @@ class Level_3_Advanced:
 
     @time_trial
     def test_compare_Q4(self):
-        """Qestion Four"""
-        f4_list , f4_tuple = CountCalls().Q4('34,67,55,33,12,98')
+        """Question Four"""
+        # Question: Write a program which accepts a sequence of comma-separated numbers from console
+        # and generate a list and a tuple which contains every number.
+        # Suppose the following input is supplied to the program: 34,67,55,33,12,98
+        # Then, the output should be: ['34', '67', '55', '33', '12', '98'] ('34', '67', '55', '33', '12', '98')
+        # Hints: In case of input data being supplied to the question,
+        # it should be assumed to be a console input. tuple() method can convert list to tuple
+        f4_list, f4_tuple = CountCalls().Q4('34,67,55,33,12,98')
         print(type(f4_list))
         print(type(f4_tuple))
 
-        #if not (not (type(f4_list)  list) and not (f4_tuple not tuple)):
-            #raise AssertionError("func failed basic test.")
-        return f4_list,f4_tuple
+        # if not (not (type(f4_list)  list) and not (f4_tuple not tuple)):
+        # raise AssertionError("func failed basic test.")
+        return f4_list, f4_tuple
 
     @time_trial
     def test_compare_Q5(self):
-        """Qestion five"""
-
-        f5_getString = CountCalls().Q5_getString(None)
-        f5_printString = CountCalls().Q5_printString(f5_getString.lower())
+        """Question five"""
+        # Question: Define a class which has at least two methods:
+        # getString: to get a string from console input printString: to print the string in upper case.
+        # Also, please include simple test function to test the class methods.
+        # Use init method to construct some parameters
+        f5_getString = CountCalls().Q5_getString()
+        f5_printString = CountCalls().Q5_printString(f5_getString)
         return f5_printString
 
+    @time_trial
+    def test_compare_Q6(self):
+        """Question six"""
+        # Question: Write a program that calculates and prints the value according to the given formula:
+        # Q = Square root of [(2 * C * D)/H] Following are the fixed values of C and H: C is 50. H is 30.
+        # D is the variable whose values should be input to your program in a comma-separated sequence.
+        # Example Let us assume the following comma separated input sequence is given to the program: 100,150,180
+        # The output of the program should be: 18,22,24
+        # Hints: If the output received is in decimal form,
+        # it should be rounded off to its nearest value
+        # (for example, if the output received is 26.0, it should be printed as 26)
+        # In case of input data being supplied to the question, it should be assumed to be a console input.
 
-result = Level_3_Advanced().test_compare_Q5()
-print(f"Result{result}")
-logging.info(str(result))
+        f6 = CountCalls().Q6([100, 150, 180])
+        print(f6)
+        if f6 != [18, 22, 24]:
+            raise AssertionError("func failed basic test.")
+        return f6
+
+    @time_trial
+    def test_compare_Q7(self):
+        """Question seven"""
+        # Question: Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array.
+        # The element value in the i-th row and j-th column of the array should be i*j. Note: i=0,1.., X-1; j=0,1,¡­Y-1.
+        # Example Suppose the following inputs are given to the program: 3,5
+        # Then, the output of the program should be: [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+        # Hints: Note: In case of input data being supplied to the question,
+        # it should be assumed to be a console input in a comma-separated form.
+
+        f7 = CountCalls().Q7(input('First args: '),input('Second args: '))
+        if 0 != 0:
+            raise AssertionError("func failed basic test.")
+        return f7
 
 
-'''
-  @time_trial
-def test_compare_Q6(self):
-        """Qestion six"""
-   f6 = CountCalls().Q6()
-   if 0 !=0 :
-        raise AssertionError("func failed basic test.")
-    return f6
-result = Level_3_Advanced().test_compare_Q6()
-print(f"Result{result}")
-logging.info(str(result))
-  @time_trial
-def test_compare_Q7(self):
-        """Qestion seven"""
-   f7 = CountCalls().Q7()
-   if 0 !=0 :
-        raise AssertionError("func failed basic test.")
-    return f7
 result = Level_3_Advanced().test_compare_Q7()
 print(f"Result{result}")
 logging.info(str(result))
+
+'''
   @time_trial
 def test_compare_Q8(self):
         """Qestion eight"""
