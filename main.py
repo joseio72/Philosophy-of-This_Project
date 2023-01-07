@@ -67,15 +67,22 @@ class CountCalls:
         return calc_Q(i for i in args)
 
 
-    """Qestion Seven"""
-    def Q7(self, args):
-        import math
-        print(f'Input {args}')
-        def calc_Q(D) -> list:
-            C, H = 50, 30
-            out = []
-            for i in D:
-                out.append(int(math.sqrt((2 * C * i) / H)))
-            return out
-        calc_Q(args)
-        return calc_Q(i for i in args)
+    """Qestion Eigth"""
+    def Q8(self,args):
+        strings = args.split(',')
+        # Sort the list of strings alphabetically
+        strings.sort()
+        # Join the sorted list of strings into a single string with commas
+        result = ','.join(strings)
+        # Print the result
+        return result
+
+    """Qestion Nine"""
+    def Q9(self, args):
+        strings = args.upper()
+        return strings
+
+    """Qestion Ten"""
+    def Q9(self, args):
+        strings = args.upper()
+        return strings
