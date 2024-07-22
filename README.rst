@@ -13,6 +13,3 @@ Goal Two  : Beat the Challenges 1-100 with cython to the best of one's own abili
       "your ability"
 GOOD LUCK YOU CAN DO IT
 
-Find.me -
-----------
-https://twitter.com/rahenvy
