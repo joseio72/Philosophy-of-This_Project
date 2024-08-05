@@ -2,7 +2,7 @@ Philosophy of This Project.
 ==========================
 
 
-Enter A new grad With literally no idea what the shit to do with his life.
+Enter A new grad With literally no idea what the flip to do with his life.
 So this means just we do something, This is that something.         Jose' Israel Ossorio-Rojas
 
 
